@@ -1,0 +1,25 @@
+body {
+    background-color: rgba(0, 0, 0, 0.411);
+}
+.container-fluid {
+    display: flex;
+}
+
+.section-list {
+    flex: 3;
+}
+
+.section-form {
+    flex: 2;
+}
+
+#iImportant {
+    font-size: 35px;
+    color: rgb(19, 89, 146);
+    cursor: pointer;
+}
+
+#iImportant:hover {
+    color: rgb(22, 100, 163);
+}
+
