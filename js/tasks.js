@@ -8,6 +8,7 @@ class Task {
         this.color = color;
         this.contact = contact;
         this.description = description;
-        // TODO: finish here
+
+        this.name = "Yadiel";
     }
 }
