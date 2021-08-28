@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(0, 0, 0, 0.411);
+    background: url(../images/alex-shutin-kKvQJ6rK6S4-unsplash.jpg);
 }
 .container-fluid {
     display: flex;
@@ -23,3 +23,18 @@ body {
     color: rgb(22, 100, 163);
 }
 
+.task {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem 2rem;
+}
+
+.titles {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+#important {
+    color: rgb(19, 89, 146);
+}

@@ -55,13 +55,35 @@ function save(){
 function displayTask(task){
     let syntax = `
     <div class="task">
-    <h6>${task.title}</h6>
-    <label>${task.location}</label>
-    <label>${task.contact}</label>
+        <div class="d-flex justify-content-between ">
+            <div class="d-flex">
+                ${checkImportance(task)}
+                <h6 class="px-1">${task.title}</h6>
+            </div>
+            <label> Due by: ${task.due}</label>
+        </div>
+        <label>Description: ${task.description}</label>
+        <hr>
+        <div class="d-flex justify-content-between">
+            <label>Priority: ${task.priority}</label>
+            <label>Location: ${task.location}</label>
+            <label>Contact: ${task.contact}</label>
+        </div>
     </div>
     `;
 
     $(".pending-tasks").append(syntax);
+}
+
+function checkImportance(task){
+    if(task.important){
+        let isIportant = `<i id="important" class="fas fa-star"></i>`;
+        return isIportant;
+    }
+    else {
+        let notImportant= `<i id="important" class="far fa-star"></i>`;
+        return notImportant;
+    }
 }
 
 function init(){
