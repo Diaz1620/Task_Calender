@@ -1,5 +1,6 @@
 body {
     background: url(../images/alex-shutin-kKvQJ6rK6S4-unsplash.jpg);
+    padding: 1rem;
 }
 .container-fluid {
     display: flex;
@@ -11,6 +12,7 @@ body {
 
 .section-form {
     flex: 2;
+    padding-top: 1.5rem;
 }
 
 #iImportant {
@@ -37,4 +39,16 @@ body {
 
 #important {
     color: rgb(19, 89, 146);
+}
+
+#toggle-form {
+    /* font-size: 25px;
+    position:relative;
+    top: 30rem;
+    padding: 1rem;*/
+} 
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
 }

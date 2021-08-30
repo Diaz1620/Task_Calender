@@ -15,10 +15,14 @@
     <!-- header -->
 
     <main class="container-fluid">
-
         <section class="section-list">
-            <h3 class="titles">Your pending tasks</h3>
-
+            
+                <h3 class="titles">Your pending tasks</h3>
+                <div class="action-buttons">
+                    <button id="toggle-form" class="btn btn-primary me-1">Toggle Form</button>
+                    <button id="clear-tasks" class="btn btn-danger">Clear All</button>
+                </div>
+            
             <div class="pending-tasks">
                 <div class="task">
                     <div class="d-flex justify-content-between ">
@@ -28,7 +32,10 @@
                         </div>
                         <label>Due by: 12/28/2021 20:00</label>
                     </div>
-                    <label>Description: Do dishes before Tay sees it.</label>
+                    <div class="d-flex justify-content-between">
+                        <label>Description: Do dishes before wife sees them.</label>
+                        <button class="btn btn-info">Done</button>
+                    </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <label>Priority: High</label>
@@ -38,11 +45,15 @@
                 </div>
                 <!-- here -->
             </div>
+
+            <h3 class="titles"> Your Completed Tasks</h3>
+            <div class="completed-tasks">
+            </div>
+
         </section>
-
+        <!-- <i id="toggle-form" class="far fa-caret-square-right"></i> -->
         <section class="section-form">
-
-            <form class="row g-3">
+            <form id="task-form" class="row g-3">
                 <div>
                     <label for="title" class="form-label">Title</label>
                     <input id="txtTitle" type="text" class="form-control">
@@ -81,8 +92,8 @@
                 </div>
             </form>
             <br>
+            <button id="btnSave" class="btn btn-dark">Save Task</button>
             <div>
-                <button id="btnSave" class="btn btn-dark">Save Task</button>
             </div>
 
         </section>

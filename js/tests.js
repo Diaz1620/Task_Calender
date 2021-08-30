@@ -71,6 +71,7 @@ function testReq() {
         url: "http://restclass.azurewebsites.net/api/test",
         success: function(res) { // res is variable name could be anything
             console.log("Request Ok", res);
+
         },
         error: function(error) { //error is variable name could be anything
             console.error("Request failed :(", error)
